@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe 1 - My Cookbook</title>
+    <title>About Us - My Cookbook</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,21 +33,28 @@
         }
         .container {
             padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        .recipe-image {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .recipe-image img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .recipe-details h2 {
+        h2 {
             color: #ff6347;
-            margin-bottom: 15px;
         }
-        .ingredients, .instructions {
-            margin-bottom: 30px;
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .about-text {
+            width: 60%;
+        }
+        .about-image {
+            width: 35%;
+            text-align: center;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
         }
         footer {
             text-align: center;
@@ -61,43 +68,31 @@
 <body>
 
 <header>
-    <h1>Recipe 1</h1>
+    <h1>About My Cookbook</h1>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
+    <a href="D:\New folder\index.html.html">Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
-    <div class="recipe-image">
-        <img src="recipe1.jpg" alt="Recipe 1 Image">
-    </div>
-    <div class="recipe-details">
-        <h2>Recipe 1 Title</h2>
-        <p>A short description of the recipe.</p>
+    <h2>Welcome to My Cookbook</h2>
+    
+    <div class="about-content">
+        <div class="about-text">
+            <p>Welcome to My Cookbook! This website is a labor of love, created to share my favorite recipes with the world. Whether you're a beginner in the kitchen or an experienced home cook, there's something here for everyone. I believe cooking should be a fun, creative, and rewarding experience that brings people together.</p>
 
-        <div class="ingredients">
-            <h3>Ingredients:</h3>
-            <ul>
-                <li>1 cup of ingredient 1</li>
-                <li>2 tbsp of ingredient 2</li>
-                <li>1 tsp of ingredient 3</li>
-                <!-- Add more ingredients as needed -->
-            </ul>
+            <p>Here, you'll find a collection of my most cherished recipes, from comforting pasta dishes to indulgent desserts. I hope these recipes inspire you to try something new in the kitchen and enjoy the process of cooking and sharing meals with loved ones.</p>
+
+            <p>Every recipe I share on this site is tried, tested, and tweaked to perfection. I strive to make cooking as simple and enjoyable as possible, so you can spend less time stressing over complicated instructions and more time savoring delicious food!</p>
         </div>
-
-        <div class="instructions">
-            <h3>Instructions:</h3>
-            <ol>
-                <li>Step 1: Do this.</li>
-                <li>Step 2: Do that.</li>
-                <li>Step 3: Finish it off with this.</li>
-                <!-- Add more steps as needed -->
-            </ol>
+        <div class="about-image">
+            <img src="D:\New folder\my cookbook" alt="Cooking image">
         </div>
     </div>
+
 </div>
 
 <footer>
