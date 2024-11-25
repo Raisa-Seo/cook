@@ -46,10 +46,13 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        .recipe-card img {
-            max-width: 100%;
-            border-radius: 8px;
         }
+    .recipe-card img {
+        width: 200px; /* Set uniform width */
+        height: 200px; /* Set uniform height */
+        object-fit: cover; /* Fit image without distortion */
+        border-radius: 8px; /* Maintain rounded corners */
+    }
         .recipe-card h3 {
             margin: 15px 0 10px;
             color: #ff6347;
