@@ -33,7 +33,7 @@
         }
         .container {
             padding: 20px;
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
         }
         h2 {
@@ -56,8 +56,18 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .contact-form div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .contact-form label {
+            width: 120px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
         .contact-form input, .contact-form textarea {
-            width: 100%;
+            width: 20%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
@@ -70,6 +80,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            margin-left: 130px; /* Aligns button correctly */
         }
         .contact-form button:hover {
             background-color: #e55347;
@@ -93,33 +104,35 @@
     <a href=index.html>Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-</nav>
+    </nav>
 
 <div class="container">
     <h2>Get in Touch</h2>
     <p>If you have any questions, suggestions, or just want to say hello, feel free to contact us using the form below or reach out directly at the number provided.</p>
 
     <div class="contact-info">
+     </div>
         <div>
             <h3>Phone Number</h3>
             <p>Call or text us at: <strong>01712625902</strong></p>
-            <p>Email: 
-            <a href="mailto: tabassumraisa68@gmail.com">
-            tabssumraisa68@gmail.com</a> 
-        </p>
+            <p>Email: <a href="mailto:tabassumraisa68@gmail.com">tabassumtaba68@gmail.com</a></p>
         </div>
         <div>
             <h3>Contact Form</h3>
             <div class="contact-form">
                 <form action="submit_form.php" method="POST">
+            <div>
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" required>
-
+            </div>
+            <div>
                     <label for="email">Your Email:</label>
                     <input type="email" id="email" name="email" required>
-
+            </div>
+            <div>
                     <label for="message">Your Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
 
                     <button type="submit">Send Message</button>
                 </form>
